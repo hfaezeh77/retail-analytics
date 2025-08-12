@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python / venv / notebooks
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Data & local DB
+data/
+retail.db
+*.sqlite
+*.db
+
+# Figures (optional: keep if you want)
+# figures/
+
+# Streamlit / local stuff
+.streamlit/secrets.toml
