@@ -19,12 +19,13 @@ See visuals in `notebooks/figures/`:
 
 **Requirements:** Python 3.10+, `sqlite3`, `pip`
 
-### 1) Create a virtual environment & install deps
+### Create a virtual environment & install deps
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
+exit
 
 ### 2) Add data
 
