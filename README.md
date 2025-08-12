@@ -25,3 +25,23 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
+
+### 2) Add data
+
+Place the UCI *Online Retail* file at:
+data/online_retail.xlsx
+
+
+If your columns differ (e.g., `Price` vs `UnitPrice`), edit `sql/01_load_staging.py`.
+
+---
+
+## 3) Build the SQLite database
+
+```bash
+python sql/01_load_staging.py            # load raw → stg_invoice_raw
+sqlite3 retail.db < sql/02_model_star.sql
+sqlite3 retail.db < sql/03_analysis.sql  # creates analysis views
+
+
+
