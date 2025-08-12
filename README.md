@@ -19,7 +19,7 @@ See visuals in `notebooks/figures/`:
 
 **Requirements:** Python 3.10+, `sqlite3`, `pip`
 
-### Create a virtual environment & install deps
+### 1) Create a virtual environment & install deps
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
